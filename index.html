@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page - Supplementary Videos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .authors {
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin: 40px 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #333;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+        .video-card video {
+            width: 100%;
+            display: block;
+            background: #000;
+        }
+        .video-card .caption {
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            color: #444;
+        }
+        .video-card .caption strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #1a1a1a;
+        }
+        .single-video {
+            max-width: 720px;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        @media (max-width: 500px) {
+            .video-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ====== 修改这里的论文标题和作者 ====== -->
+        <h1>Your Paper Title Here</h1>
+        <p class="authors">
+            Author A<sup>1</sup>, Author B<sup>1</sup>, Author C<sup>2</sup><br>
+            <small><sup>1</sup>University A &nbsp; <sup>2</sup>University B</small>
+        </p>
+        <!-- ====================================== -->
+
+        <h2 class="section-title">Supplementary Videos</h2>
+
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/1.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 1</strong>
+                    Description of video 1.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/2.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 2</strong>
+                    Description of video 2.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/3.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 3</strong>
+                    Description of video 3.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/4.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 4</strong>
+                    Description of video 4.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/5.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 5</strong>
+                    Description of video 5.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls preload="metadata">
+                    <source src="videos/6.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <strong>Video 6</strong>
+                    Description of video 6.
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            Supplementary material for paper submission.
+        </footer>
+    </div>
+</body>
+</html>
